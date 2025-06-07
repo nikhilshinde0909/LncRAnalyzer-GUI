@@ -381,7 +381,7 @@ export default function Pipeline() {
                         name="orgName"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Organism Name (separted by underscore)<span className="text-red-500">*</span></FormLabel>
+                            <FormLabel>Organism Name<span className="text-red-500">*</span></FormLabel>
                             <FormControl>
                               <Input {...field} />
                             </FormControl>
@@ -417,7 +417,7 @@ export default function Pipeline() {
                         name="relSpeciesName"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Related Species (separted by underscore)<span className="text-red-500">*</span></FormLabel>
+                            <FormLabel>Related Species<span className="text-red-500">*</span></FormLabel>
                             <FormControl>
                               <Input {...field} />
                             </FormControl>

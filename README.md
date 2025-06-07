@@ -25,10 +25,11 @@ A modern web-based graphical user interface for the LncRAnalyzer bioinformatics 
 
 ### Supported File Formats
 - **FASTQ files**: Raw sequencing reads (R1 and R2)
-- **FASTA files**: Genome sequences, known lncRNAs
+- **FASTA files**: Genome, rRNA and known lncRNAs sequences
 - **GTF files**: Gene annotations
+- **BED files**: non-coding gene annotations in bed12 format
 - **Chain files**: Liftover mappings (optional)
-- **Design files**: Experimental design matrices (optional)
+- **Design file**: Experimental design (optional)
 
 ## Installation
 
@@ -81,8 +82,8 @@ This will automatically open web browser tab `http://localhost:5000`
    - **Related Species Name**: Scientific name of related species for comparison
 
 2. **Upload Required Files**:
-   - **R1 Reads**: Upload one or more FASTQ files containing forward reads
-   - **R2 Reads**: Upload reverse reads (optional for single-end sequencing)
+   - **R1 Reads**: Upload one or more compressed FASTQ files (*.gz) containing forward reads
+   - **R2 Reads**: Upload compressed FASTQ files (*.gz) reverse reads (optional for single-end sequencing)
    - **Genome**: Reference genome in FASTA format
    - **Annotation**: Gene annotation in GTF format
    - **rRNA Sequences**: ribosomal RNA sequences in FASTA format
@@ -94,9 +95,9 @@ This will automatically open web browser tab `http://localhost:5000`
 4. **Optional Files** (expand sections as needed):
    - Liftover chain files
    - Non-coding RNA databases
-   - miRNA and snoRNA sequences
+   - miRNA and snoRNA files in bed12 format
    - Known lncRNA databases
-   - Experimental design matrices
+   - Experimental design file
 
 5. **Submit Pipeline**: Click "Run Pipeline" to start the analysis
 
